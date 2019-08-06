@@ -13,15 +13,17 @@ function getData(){
     success: handleDataFromServer
 
   }
+
   $.ajax(settings)
+
   var settings2 = {
-    url: '../server/foodanage.json',
+    url: '../server/foodandage.json',
     method: 'GET',
     dataType: 'json',
     success: handleDataFromServer
 
   }
-  $.ajax(settings2)
+  $.ajax(settings2);
 }
 
 function handleDataFromServer (response){
